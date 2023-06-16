@@ -1,0 +1,515 @@
+hp@Arijit MINGW64 ~
+$ pwd
+/c/Users/hp
+
+hp@Arijit MINGW64 ~
+$ cd Documents/
+
+hp@Arijit MINGW64 ~/Documents
+$ cd WEB\ DEVELOPMENT/
+
+hp@Arijit MINGW64 ~/Documents/WEB DEVELOPMENT
+$ mkdir Newsletter-Signup
+
+hp@Arijit MINGW64 ~/Documents/WEB DEVELOPMENT
+$ cd Newsletter-Signup/
+
+hp@Arijit MINGW64 ~/Documents/WEB DEVELOPMENT/Newsletter-Signup
+$ touch app.js signup.html success.html failure.html
+
+hp@Arijit MINGW64 ~/Documents/WEB DEVELOPMENT/Newsletter-Signup
+$ npm install body-parser
+
+added 31 packages in 2s
+
+7 packages are looking for funding
+  run `npm fund` for details
+
+hp@Arijit MINGW64 ~/Documents/WEB DEVELOPMENT/Newsletter-Signup
+$ npm install express
+
+added 29 packages, and audited 61 packages in 3s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+hp@Arijit MINGW64 ~/Documents/WEB DEVELOPMENT/Newsletter-Signup
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (newsletter-signup) newsletter_signup
+version: (1.0.0)                                                                                    
+description:                                                                                        
+entry point: (app.js)                                                                               
+test command:                                                                                       
+git repository:                                                                                     
+keywords:                                                                                           
+author: Arijit Goswami                                                                              
+license: (ISC)                                                                                      
+About to write to C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\package.json:
+
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  },
+  "name": "newsletter_signup",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arijit Goswami",
+  "license": "ISC",
+  "description": ""
+}
+
+
+Is this OK? (yes)
+
+hp@Arijit MINGW64 ~/Documents/WEB DEVELOPMENT/Newsletter-Signup
+$ nmp install request
+bash: nmp: command not found
+
+hp@Arijit MINGW64 ~/Documents/WEB DEVELOPMENT/Newsletter-Signup
+$ npm install request
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 43 packages, and audited 104 packages in 4s
+
+9 packages are looking for funding
+  run `npm fund` for details
+
+1 moderate severity vulnerability
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+
+hp@Arijit MINGW64 ~/Documents/WEB DEVELOPMENT/Newsletter-Signup
+$ nodemon app.js
+[nodemon] 2.0.22
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\express\lib\application.js:217
+    throw new TypeError('app.use() requires a middleware function')
+    ^
+
+TypeError: app.use() requires a middleware function
+    at Function.use (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\express\lib\application.js:217:11)
+    at Object.<anonymous> (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:9:5)      
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:9
+app.use(exp)
+        ^
+
+ReferenceError: exp is not defined
+    at Object.<anonymous> (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:9:9)      
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\serve-static\index.js:40
+    throw new TypeError('root path required')
+    ^
+
+TypeError: root path required
+    at Function.serveStatic [as static] (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\serve-static\index.js:40:11)
+    at Object.<anonymous> (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:9:17)     
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\path-to-regexp\index.js:63
+  path = ('^' + path + (strict ? '' : path[path.length - 1] === '/' ? '?' : '/?'))
+                                                ^
+
+TypeError: Cannot read properties of undefined (reading 'length')
+    at pathtoRegexp (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\path-to-regexp\index.js:63:49)
+    at new Layer (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\express\lib\router\layer.js:45:17)
+    at Function.route (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\express\lib\router\index.js:505:15)
+    at app.<computed> [as post] (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\express\lib\application.js:498:30)
+    at Object.<anonymous> (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:15:5)     
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:15
+app.post("/", fun)
+              ^
+
+ReferenceError: fun is not defined
+    at Object.<anonymous> (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:15:15)    
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:15
+app.post("/", function())
+                        ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:10
+app.use(bo)
+        ^
+
+ReferenceError: bo is not defined
+    at Object.<anonymous> (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:10:9)     
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:10
+app.use(bodyParser.)
+                   ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\express\lib\application.js:217
+    throw new TypeError('app.use() requires a middleware function')
+    ^
+
+TypeError: app.use() requires a middleware function
+    at Function.use (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\node_modules\express\lib\application.js:217:11)
+    at Object.<anonymous> (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:10:5)     
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+body-parser deprecated undefined extended: provide extended option app.js:10:20
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:10
+app.use(bodyParser.urlencoded({en}))
+                               ^
+
+ReferenceError: en is not defined
+    at Object.<anonymous> (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:10:32)    
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:10
+app.use(bodyParser.urlencoded({extended}))
+                               ^
+
+ReferenceError: extended is not defined
+    at Object.<anonymous> (C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:10:32)    
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:20
+});
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:21
+});
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+C:\Users\hp\Documents\WEB DEVELOPMENT\Newsletter-Signup\app.js:22
+});
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.16.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running on port 3000.
+Arijit Goswami abc@gmail.com
